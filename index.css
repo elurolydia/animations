@@ -1,0 +1,43 @@
+.box {
+  height: 300px;
+  width: 300px;
+  border: 10px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: linearBall;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* @keyframes linearBall {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+} */
+
+@keyframes linearBall {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: aqua;
+  }
+
+  25% {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: brown;
+  }
+  75% {
+    background-color: white;
+    left: 75%;
+  }
+}
